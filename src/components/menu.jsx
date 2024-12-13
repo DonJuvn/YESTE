@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 const Menu = () => {
+   const [isOpen, setIsOpen] = useState(false);
+
+   const toggleMenu = () => {
+      setIsOpen(!isOpen);
+   };
+
    return (
       <div id="menu">
          <div className="container">
@@ -7,7 +13,12 @@ const Menu = () => {
                <div className="logo">
                   <img src="img/logo.svg" alt="" />
                </div>
-               <div className="navigation">
+               <div className="hamburger" onClick={toggleMenu}>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+               <div className={`navigation ${isOpen ? "open" : ""}`}>
                   <a href="#about">О нас</a>
                   <a href="#portfolio">Портфолио</a>
                   <a href="#" id="call">

@@ -57,5 +57,62 @@ a {
    align-items: center;
    gap: 8px;
    text-align: right;
-  float: right;
+   float: right;
+}
+#menu .menu .hamburger {
+   display: none;
+   /* display: flex; */
+   flex-direction: column;
+   gap: 5px;
+   cursor: pointer;
+}
+
+#menu .menu .hamburger div {
+   width: 25px;
+   height: 3px;
+   background-color: #fff;
+   border-radius: 5px;
+}
+@media (max-width: 768px) {
+  #menu .menu {
+     flex-direction: row;
+     padding: 3% 0;
+     flex-wrap: wrap;
+     align-items: center;
   }
+
+  .menu .navigation {
+     width: 100%;
+     flex-direction: column;
+     max-height: 0; /* Start fully collapsed */
+     overflow: hidden; /* Hide overflow content */
+     transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth animations */
+     opacity: 0; /* Invisible by default */
+  }
+
+  .menu .navigation.open {
+     max-height: 300px; /* Fully expanded (adjust for content height) */
+     opacity: 1; /* Fully visible */
+     margin-top: 20px;
+  }
+
+  #menu .menu .hamburger {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     cursor: pointer;
+  }
+  #menu .menu .hamburger div {
+     width: 25px;
+     height: 3px;
+     background-color: #fff;
+     border-radius: 5px;
+  }
+  .menu .navigation a {
+     font-size: 14px;
+     padding: 8px 0;
+  }
+  .logo img {
+     width: 107px;
+  }
+}
