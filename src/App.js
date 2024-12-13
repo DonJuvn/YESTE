@@ -2,6 +2,7 @@ import "./App.css";
 import Menu from "./components/menu";
 import Video from "./components/video";
 import Counters from "./components/counters";
+import Portfolio from "./components/portfolio";
 
 function App() {
    return (
@@ -9,6 +10,7 @@ function App() {
          <Menu />
          <Video />
          <Counters />
+         <Portfolio />
       </>
    );
 }
