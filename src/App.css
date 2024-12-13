@@ -13,11 +13,10 @@ body {
    margin: 0 auto;
    max-width: 1566px;
 }
-a{
-  text-decoration: none;
-  color: #fff;
+a {
+   text-decoration: none;
+   color: #fff;
 }
-
 
 @font-face {
    font-family: "Radio Grotesk";
@@ -27,3 +26,36 @@ a{
    font-weight: 400; /* Normal weight */
    font-style: normal;
 }
+
+/* menu */
+#menu {
+   background-color: #2c2c2c;
+   padding: 1.2% 0;
+}
+.menu {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+.menu .logo img {
+   width: 107px;
+}
+.menu .navigation {
+   display: flex;
+   flex-direction: row;
+   width: 25%;
+   justify-content: space-between;
+}
+.menu .navigation a {
+   flex-wrap: nowrap;
+   display: flex;
+   white-space: nowrap;
+}
+.menu .navigation #call {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   text-align: right;
+  float: right;
+  }

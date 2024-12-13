@@ -10,11 +10,10 @@ const Menu = () => {
                <div className="navigation">
                   <a href="#about">О нас</a>
                   <a href="#portfolio">Портфолио</a>
-                  <a href="#">
-                     Связаться с нами <img src="img/link.png" alt="" />
+                  <a href="#" id="call">
+                     Связаться с нами <img src="img/link.svg" alt="" />
                   </a>
                </div>
-               <h1>Radio grotesk</h1>
             </div>
          </div>
       </div>
