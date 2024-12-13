@@ -4,6 +4,7 @@ import Video from "./components/video";
 import Counters from "./components/counters";
 import Portfolio from "./components/portfolio";
 import Logos from "./components/logos";
+import Footer from "./components/footer";
 
 function App() {
    return (
@@ -13,6 +14,7 @@ function App() {
          <Counters />
          <Portfolio />
          <Logos />
+         <Footer />
       </>
    );
 }
