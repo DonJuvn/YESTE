@@ -1,5 +1,6 @@
-import React from "react";const Portfolio = () => {
-   // Array of portfolio items
+import React, { useState } from "react";
+
+const Portfolio = () => {
    const portfolioItems = [
       {
          id: 1,
@@ -68,6 +69,12 @@ import React from "react";const Portfolio = () => {
          link: "https://example.com/project3",
       },
    ];
+
+   const [currentItem, setCurrentItem] = useState(0);
+
+   const handlePaginationClick = (index) => {
+      setCurrentItem(index);
+   };
 
    return (
       <div id="portfolio">

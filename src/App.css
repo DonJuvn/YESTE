@@ -282,6 +282,8 @@ p {
 .portfolio #cover {
    width: 100%;
    transition: 0.3s;
+   object-fit: cover;
+   height: auto;
 }
 .portfolio #cover:hover {
    transform: scale(1.05);
@@ -301,8 +303,29 @@ p {
 .portfolio .item a img:hover {
    transform: scale(1.1);
 }
-.portfolio .item p{
-  font-size: 16px;
-  margin-top: 15px;
-  width: 50%;
+.portfolio .item p {
+   font-size: 16px;
+   margin-top: 15px;
+   width: 50%;
+}
+@media screen and (max-width: 768px) {
+   #title {
+      font-size: 18px;
+      line-height: 21.78px;
+   }
+   .portfolio {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 5%;
+      padding-bottom: 15px;
+      scrollbar-width: none;
+   }
+   .portfolio .item {
+      width: 75%;
+      flex-shrink: 0;
+      padding: 3% 0 5%;
+   }
+   .portfolio .item p{
+    width: 70%;
+   }
 }
