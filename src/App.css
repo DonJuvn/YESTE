@@ -210,3 +210,39 @@ p {
 .counters .item:nth-child(4) {
    width: 49%;
 }
+
+@media screen and (max-width: 768px) {
+   #counters {
+      padding-top: 10%;
+   }
+   .counters {
+      height: 60vh;
+   }
+   .counters .item {
+      height: 32%;
+   }
+   .counters .item h1 {
+      font-size: 50px;
+   }
+   .counters .item p {
+      font-size: 14px;
+      font-weight: 200;
+   }
+   .counters .item:nth-child(1) {
+      width: 100%;
+      margin-bottom: 2%;
+   }
+   .counters .item:nth-child(2) {
+      width: 100%;
+      order: 4;
+   }
+   .counters .item:nth-child(3) {
+      width: 48.5%;
+      order: 3;
+   }
+   .counters .item:nth-child(4) {
+      width: 48.5%;
+      order: 2;
+      margin-bottom: 2%;
+   }
+}
