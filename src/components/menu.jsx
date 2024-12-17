@@ -19,9 +19,9 @@ const Menu = () => {
                   <div></div>
                </div>
                <div className={`navigation ${isOpen ? "open" : ""}`}>
-                  <a href="#about">О нас</a>
+                  <a href="#counters">О нас</a>
                   <a href="#portfolio">Портфолио</a>
-                  <a href="#" id="call">
+                  <a href="#footer" id="call">
                      Связаться с нами <img src="img/link.svg" alt="" />
                   </a>
                </div>

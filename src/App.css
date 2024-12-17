@@ -424,7 +424,7 @@ p {
 .footer .social-media {
    display: flex;
    flex-direction: row;
-   width: 30%;
+   width: 40%;
    justify-content: space-between;
    align-items: center;
 }
@@ -485,6 +485,7 @@ p {
       gap: 8px;
       width: 100%;
       margin-bottom: 5px;
+      white-space: nowrap;
    }
    .footer .social-media a:hover {
       transform: scale(1);
