@@ -1,5 +1,4 @@
-html {
-   scroll-behavior: smooth;
+html {   scroll-behavior: smooth;
 }
 body {
    font-family: "Radio Grotesk", sans-serif;
@@ -27,19 +26,22 @@ a {
    font-style: normal;
 }
 
+/* Logo animation during splash screen */
 .splash-screen img {
    width: 25%;
    animation: fadeIn 1.5s ease-in-out;
-}
-@keyframes fadeIn {
-   0% {
-      opacity: 0;
-   }
-   100% {
-      opacity: 1;
-   }
+   position: relative;
+   transform: translate(0, 0); /* Starting position */
+   transition: transform 1s ease, width 1s ease; /* Smooth transition */
 }
 
+/* Logo moves to top-left on splash screen finish */
+.splash-screen.animate-out img {
+   transform: translate(-40vw, -42vh); /* Adjust values for precise position */
+   width: 5%; /* Scale down the logo as it moves */
+}
+
+/* Splash screen container */
 .splash-screen {
    position: fixed;
    top: 0;
@@ -55,8 +57,9 @@ a {
    opacity: 1;
 }
 
+/* Move splash screen out and fade it */
 .splash-screen.animate-out {
-   transform: translateY(-100%);
+   transform: translateY(0);
    opacity: 0;
 }
 
